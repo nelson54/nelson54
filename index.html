@@ -32,9 +32,9 @@
         background-image: url('./images/profile.jpg');
         background-size: cover;
         display: block;
-        border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
         float: right;
         position:relative;
         z-index: 9999;
@@ -651,7 +651,6 @@
         font-size: 0.8em;
         color: rgb(36, 39, 41);
         background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(173, 179, 185);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
@@ -659,8 +658,8 @@
         box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset;
         white-space: nowrap;
         vertical-align: middle;
-        background-position: initial initial;
-        background-repeat: initial initial;
+        background-position: initial;
+        background-repeat: initial;
     }
 
     .md-comment {
@@ -911,7 +910,6 @@
         padding-bottom: .3em;
         font-size: 2.25em;
         line-height: 1.2;
-        border-bottom: 1px solid #eee;
     }
 
     h2 {
@@ -1249,23 +1247,57 @@
         text-decoration: none;
     }
 
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        border-bottom: 1px solid #dfe2e5;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header a {
+        margin-top: 1rem;
+    }
+
+    header a > img {
+        padding: 5px;
+        border-radius:50%;
+        height: 2.75em;
+        width: 2.75em;
+        margin-left: .5rem;
+    }
+
+    header a:hover > img {
+        background-color: #b5d6fc;
+    }
 
     </style>
 </head>
 <body class='typora-export'>
 <div id='write'>
     <span class="profile-pic"></span>
-    <p>&nbsp;</p>
-    <h2><a name='header-n192' class='md-header-anchor ' href="http://dereknelson.io">Derek Nelson</a></h2>
-    <p>&nbsp;</p>
-    <h4><a name='header-n10' class='md-header-anchor '></a>About me</h4>
+    <header>
+        <h1><a name='header-n192' class='md-header-anchor ' href="http://dereknelson.io">Derek Nelson</a></h1>
+
+        <a href="#" alt="Github"><img src="./images/icons/github.png"></a>
+        <a href="#" alt="LinkedIn"><img src="./images/icons/linkedin.png"></a>
+    </header>
+
+    <h3><a name='header-n10' class='md-header-anchor '></a>About me</h3>
     <p>Hi! I'm Derek Nelson. A programmer living in Ann Arbor, Michigan.</p>
     <p>In my free time I like to make strategy games in Javascript and port Board games to the internet. I also love
         hackathons and have placed two Top 3 finishes and a 1st place at Startup Weekend events. I also worked on a
         Tower Defense game that got 5th Global Game Jam 2018.</p>
     <p>I mostly write things in Javascript or Java depending on the Project. </p>
 
-    <h4><a name='header-n139' class='md-header-anchor '></a>Projects</h4>
+    <h3><a name='header-n139' class='md-header-anchor '></a>Projects</h3>
 
     <p><strong>Zombie Apocalypse Simulator</strong>
         <a href='https://github.com/nelson54/rebuild-remake' target='_blank' class='url'>https://github.com/nelson54/rebuild-remake</a></p>
