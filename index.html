@@ -1234,6 +1234,10 @@
         }
     </style>
     <style type='text/css'>
+        a {
+            color: #007bff;
+        }
+
         .grid {
             max-width: 860px;
             margin: 0 auto;
@@ -1261,8 +1265,24 @@
             margin-left: .5rem;
         }
 
+        header a > img.normal {
+            display: inline;
+        }
+
+        header a > img.hover {
+            display: none;
+        }
+
         header a:hover > img {
-            background-color: #b5d6fc;
+            background-color: #007bff;
+        }
+
+        header a:hover > img.normal {
+            display: none;
+        }
+
+        header a:hover > img.hover {
+            display: inline;
         }
 
         header a.text-link {
@@ -1334,6 +1354,25 @@
 
         }
 
+        .footer-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #contact {
+            margin-left: 100px;
+            margin-bottom: 100px;
+
+        }
+
+        footer {
+            color: #343434;
+            border-top: 1px solid #e5e5e5;
+            background-color: #f9f9f9;
+            padding: 30px 30px 0;
+            margin: 0 -30px 0 -30px;
+        }
+
     </style>
 </head>
 <body class='typora-export'>
@@ -1344,8 +1383,14 @@
         </span>
         <header>
                 <h1><a name='header-n192' class='md-header-anchor ' href="http://dereknelson.io">Derek Nelson</a></h1>
-                <a href="http://www.github.com/nelson54" alt="Github"><img src="./images/icons/github.png"></a>
-                <a href="https://www.linkedin.com/in/derek-nelson-54b6165a/" alt="LinkedIn"><img src="./images/icons/linkedin.png"></a>
+                <a href="http://www.github.com/nelson54">
+                    <img alt="Github" class="normal" src="./images/icons/github.png">
+                    <img alt="Github" class="hover" src="./images/icons/github-white.png">
+                </a>
+                <a href="https://www.linkedin.com/in/derek-nelson-54b6165a/">
+                    <img alt="LinkedIn" class="normal" src="./images/icons/linkedin.png">
+                    <img alt="LinkedIn" class="hover" src="./images/icons/linkedin-white.png">
+                </a>
                 <a href="./documents/resume.pdf" class="text-link" alt="Resume">Resume</a>
         </header>
 
@@ -1364,9 +1409,9 @@
         </div>
     </div>
 
-    <div id='write'>
-        <main>
 
+    <main>
+        <div class="grid">
             <section>
                 <h3><a name='header-n139' class='md-header-anchor '></a>Projects</h3>
                 <p>
@@ -1439,8 +1484,23 @@
 
                 <img src='./images/javaminion.png' alt='Javaminion' referrerPolicy='no-referrer'/>
             </section>
+        </div>
+    </main>
 
-        </main>
-    </div>
+    <footer>
+        <div class="grid">
+            <div class="footer-container">
+
+
+                <div id="contact">
+                    <p><strong>Hit me up!</strong></p>
+                    <ul>
+                        <li><label>Phone:</label> <a href="tel:1-734-274-7237">1-734-274-7237</a></li>
+                        <li><label>Email:</label> <a href="mailto:contact@dereknelson.io">contact@dereknelson.io</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
