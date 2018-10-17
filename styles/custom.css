@@ -182,6 +182,7 @@ footer {
     border: 1px solid #777777;
     padding: 5px;
     padding-bottom: 23px;
+    color: #777;
 }
 
 #document-viewer {
@@ -195,9 +196,6 @@ footer {
     text-decoration: none;
     color: #777;
     font-weight: bold;
-    margin-top: -6px;
-    line-height: 17px;
-    padding-top: 3px;
     padding-bottom: 3px;
     cursor: pointer;
 }

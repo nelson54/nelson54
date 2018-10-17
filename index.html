@@ -31,6 +31,8 @@
 
         function openDocument(document) {
             $("#document-viewer-container, .modal-overlay").show();
+            $("#document-viewer-container .new-window-document").prop('href', document);
+
             PDFObject.embed(document, "#document-viewer");
         }
 
@@ -42,6 +44,7 @@
 </head>
 <body class='typora-export'>
     <div id="document-viewer-container" class="hidden">
+        <a href="" class="new-window-document" target="_blank">Open in a new window</a>
         <a onclick="closeDocument()" class="close-document"><span>x</span></a>
         <div id="document-viewer"></div>
     </div>
