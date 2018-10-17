@@ -24,17 +24,19 @@
 
     <script type="text/javascript">
         $(function(){
-            $("#document-viewer-container").hide();
+            $("modal-overlay").style("display", "block");
+            $("#document-viewer-container, .modal-overlay").hide();
+
         });
 
         function openDocument(document) {
-            $("#document-viewer-container").show();
+            $("#document-viewer-container, .modal-overlay").show();
             PDFObject.embed(document, "#document-viewer");
         }
 
         function closeDocument() {
             $("#document-viewer-container embed").remove();
-            $("#document-viewer-container").hide();
+            $("#document-viewer-container, .modal-overlay").hide();
         }
     </script>
 </head>
@@ -43,6 +45,7 @@
         <a onclick="closeDocument()" class="close-document"><span>x</span></a>
         <div id="document-viewer"></div>
     </div>
+    <div class="modal-overlay hidden" onclick="closeDocument()" style="z-index: 1002; opacity: 0.5; display:none;"></div>
     <div class="grid">
         <a href="http://dereknelson.io">
             <span class="profile-pic-container">
