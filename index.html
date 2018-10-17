@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset='UTF-8'>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAA/wAAAGEAAAAAAAAAAAAAAAAAAAAAAAAAYQAAAP8AAABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAA/wAAAP8AAABhAAAAAAAAAAAAAAAAAAAAAAAAAGEAAAD/AAAA/wAAAGEAAAAAAAAAAAAAAAAAAABhAAAA/wAAAP8AAABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYQAAAP8AAAD/AAAAYQAAAAAAAABhAAAA/wAAAP8AAABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAA/wAAAP8AAABhAAAA/wAAAP8AAABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGEAAAD/AAAA/wAAAP8AAAD/AAAAYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAA/wAAAP8AAABhAAAA/wAAAP8AAABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAA/wAAAP8AAABhAAAAAAAAAGEAAAD/AAAA/wAAAGEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAA/wAAAP8AAABhAAAAAAAAAAAAAAAAAAAAYQAAAP8AAAD/AAAAYQAAAAAAAAAAAAAAAAAAAAAAAABhAAAA/wAAAP8AAABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAA/wAAAGEAAAAAAAAAAAAAAAAAAAAAAAAAYQAAAP8AAABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA9+8AAOfnAADP8wAAn/kAAD/8AAA//AAAn/kAAM/zAADn5wAA9+8AAP//AAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
     <meta name='viewport' content='width=device-width initial-scale=1'>
     <title>Derek Nelson</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -1402,14 +1403,28 @@
             margin: 0 -30px 0 -30px;
         }
 
+        .tech-list {
+            margin-left: 10px;
+            padding-left: 0;
+            list-style: none;
+            font-weight: bold;
+        }
+
+        .tech-list li {
+            display: inline;
+            padding-right: 15px;
+        }
+
     </style>
 </head>
 <body class='typora-export'>
 
     <div class="grid">
-        <span class="profile-pic-container">
-            <span class="profile-pic"></span>
-        </span>
+        <a href="http://dereknelson.io">
+            <span class="profile-pic-container">
+                <span class="profile-pic"></span>
+            </span>
+        </a>
         <header>
                 <h1><a href="http://dereknelson.io">Derek Nelson</a></h1>
                 <a href="http://www.github.com/nelson54">
@@ -1442,7 +1457,30 @@
     <main>
         <div class="grid">
             <section>
-                <h3><a name='header-n139' class='md-header-anchor '></a>Projects</h3>
+                <h3>Technology</h3>
+                <ul class="tech-list">
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+
+                    <li>Angular 1.x</li>
+                    <li>Phaser 2.x</li>
+                    <li>Spring</li>
+
+                    <li>MySQL</li>
+                    <li>MongoDb</li>
+                    <li>CouchDb</li>
+                    <li>Neo4j</li>
+
+                    <li>Maven</li>
+                    <li>Gradle</li>
+                    <li>Gulp/Grunt</li>
+                    <li>Webpack</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Projects</h3>
                 <p><strong><a href='https://nelson54.github.io/rebuild-remake/public/' target='_blank' class='url'>Zombie Apocalypse Simulator</a></strong></p>
 
                 <p>Uses a simple entity component system to simulate survivors and zombies. It has deterministic "randomness"
