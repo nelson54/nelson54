@@ -167,6 +167,8 @@ footer {
 .tech-list li {
     display: inline;
     padding-right: 15px;
+    color: #777;
+    font-style: italic;
 }
 
 #document-viewer-container {
