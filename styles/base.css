@@ -930,10 +930,10 @@ li > ul {
 }
 
 hr {
-    height: 2px;
+    height: 1px;
     padding: 0;
     margin: 16px 0;
-    background-color: #e7e7e7;
+    background-color: #dddddd;
     border: 0 none;
     overflow: hidden;
     box-sizing: content-box;

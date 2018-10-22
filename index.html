@@ -8,11 +8,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127497412-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-127497412-1');
+        if (window.location.hostname === 'dereknelson.io') {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-127497412-1');
+        }
     </script>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
@@ -24,6 +25,8 @@
 
     <script type="text/javascript">
         $(function(){
+
+
             $("modal-overlay").style("display", "block");
             $("#document-viewer-container, .modal-overlay").hide();
 
@@ -183,8 +186,102 @@
                     <img src='./images/javaminion.png' alt='Javaminion' referrerPolicy='no-referrer'/>
                 </a>
             </section>
+
+            <section>
+                <h3>Employment History</h3>
+
+                <h5>Learning A-Z <span class="company"><span class="em"></span> Cambium Learning Group</span></h5>
+                <p>Lead developer of a placement test for the Headsprout project which determined new students starting level and runs on the web, iOS, and Android. Developed a new user management system for Kurzweil 3000 administrators, used by thousands of schools.</p>
+                <p class="employment-tech-list">
+                    <span class="label">HTML</span>
+                    <span class="label">CSS</span>
+
+                    <span class="label">Javascript</span>
+                    <span class="label">Java</span>
+                    <span class="label">PHP</span>
+
+                    <span class="label">Ant</span>
+                    <span class="label">Spring 2.x</span>
+                    <span class="label">Angular 1.x</span>
+                    <span class="label">Phaser 2.x</span>
+                    <span class="label">jQuery</span>
+
+                    <span class="label">MySQL</span>
+                </p>
+
+                <hr>
+
+
+                <h5>Supply Chain Management <span class="company"><span class="em"></span> England Logistics</span></h5>
+                <p>Worked primarily on the audit and pay system. Wrote front-end interfaces in Google Web Toolkit and later in Angular. Used python script to automate importing bills into the legacy system. Maintained indexes for Lucene and CouchDb.</p>
+                <p class="employment-tech-list">
+                    <span class="label">HTML</span>
+                    <span class="label">CSS</span>
+
+                    <span class="label">Javascript</span>
+                    <span class="label">Java</span>
+
+                    <span class="label">Maven</span>
+                    <span class="label">Spring 3.x</span>
+                    <span class="label">Angular 1.x</span>
+
+                    <span class="label">CouchDb</span>
+                    <span class="label">Lucene</span>
+                </p>
+
+                <hr>
+
+
+                <h5>Admissions Department <span class="company"><span class="em"></span> Ferris State University</span></h5>
+                <p>Wrote the admissions application for non-traditional students. Created an interactive map for students to find the Admissions officer for their region. For the Mobile site, I used Google Maps API to give students directions to the admissions building from anywhere on campus.</p>
+                <p class="employment-tech-list">
+                    <span class="label">HTML</span>
+                    <span class="label">CSS</span>
+
+                    <span class="label">Javascript</span>
+                    <span class="label">ColdFusion</span>
+
+                    <span class="label">Backbone</span>
+                    <span class="label">jQuery</span>
+
+                    <span class="label">Microsoft SQL Server</span>
+                </p>
+
+                <hr>
+
+
+                <h5>College of Business <span class="company"><span class="em"></span> Ferris State University</span></h5>
+                <p>Maintained the College of Business website. Created new pages for events and programs using ColdFusion, Microsoft SQL Server, and JavaScript.</p>
+                <p class="employment-tech-list">
+                    <span class="label">HTML</span>
+                    <span class="label">CSS</span>
+
+                    <span class="label">Javascript</span>
+                    <span class="label">ColdFusion</span>
+
+                    <span class="label">jQuery</span>
+
+                    <span class="label">Microsoft SQL Server</span>
+                </p>
+
+                <hr>
+
+
+                <h5>Animal Care Facility <span class="company"><span class="em"></span> Ferris State University</span></h5>
+                <p>Created a web application in PHP and MySQL to keep track of animals for a Pharmacy lab.</p>
+                <p class="employment-tech-list">
+                    <span class="label">HTML</span>
+                    <span class="label">CSS</span>
+
+                    <span class="label">PHP</span>
+
+                    <span class="label">MySQL</span>
+                </p>
+            </section>
         </div>
     </main>
+
+
 
     <footer>
         <div class="grid">
