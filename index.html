@@ -19,7 +19,9 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
     <link href='styles/base.css' rel='stylesheet' type='text/css'/>
+    <link href='styles/tooltips.css' rel='stylesheet' type='text/css'/>
     <link href='styles/custom.css' rel='stylesheet' type='text/css'/>
+
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.0/pdfobject.min.js'></script>
@@ -58,16 +60,20 @@
             </span>
         </a>
         <header>
-                <h1><a href="http://dereknelson.io">Derek Nelson</a></h1>
-                <a href="http://www.github.com/nelson54">
-                    <img alt="Github" class="normal" src="./images/icons/github.png">
-                    <img alt="Github" class="hover" src="./images/icons/github-white.png">
-                </a>
-                <a href="https://www.linkedin.com/in/derek-nelson-54b6165a/">
-                    <img alt="LinkedIn" class="normal" src="./images/icons/linkedin.png">
-                    <img alt="LinkedIn" class="hover" src="./images/icons/linkedin-white.png">
-                </a>
-                <a href="./documents/resume.pdf" class="text-link" alt="Resume">Resume</a>
+            <h1><a href="http://dereknelson.io">Derek Nelson</a></h1>
+            <a href="http://www.github.com/nelson54" class="tooltip-bottom" data-tooltip="Github">
+                <img alt="Github" class="normal" src="./images/icons/github.png">
+                <img alt="Github" class="hover" src="./images/icons/github-white.png">
+            </a>
+            <a href="https://www.linkedin.com/in/derek-nelson-54b6165a/" class="tooltip-bottom" data-tooltip="LinkedIn">
+                <img alt="LinkedIn" class="normal" src="./images/icons/linkedin.png">
+                <img alt="LinkedIn" class="hover" src="./images/icons/linkedin-white.png">
+            </a>
+            <a href="https://join.skype.com/invite/FBgNy0gXhA6C" class="tooltip-bottom" data-tooltip="Skype">
+                <img alt="Skype" class="normal" src="./images/icons/skype.png">
+                <img alt="Skype" class="hover" src="./images/icons/skype-white.png">
+            </a>
+            <a href="./documents/resume.pdf" class="text-link">Resume</a>
         </header>
 
     </div>
@@ -238,7 +244,8 @@
 
 
                 <h5>
-                    Admissions Department <span class="company"><span class="em"></span> Ferris State University</span>
+                    Admissions Department
+                    <span class="company"><span class="em"></span> Ferris State University</span>
                     <span class="employment-date">2010-12</span>
                 </h5>
                 <p>Wrote the admissions application for non-traditional students. Created an interactive map for students to find the Admissions officer for their region. For the Mobile site, I used Google Maps API to give students directions to the admissions building from anywhere on campus.</p>
@@ -259,7 +266,8 @@
 
 
                 <h5>
-                    College of Business <span class="company"><span class="em"></span> Ferris State University</span>
+                    College of Business
+                    <span class="company"><span class="em"></span> Ferris State University</span>
                     <span class="employment-date">2009-10</span>
                 </h5>
                 <p>Maintained the College of Business website. Created new pages for events and programs using ColdFusion, Microsoft SQL Server, and JavaScript.</p>
@@ -279,7 +287,8 @@
 
 
                 <h5>
-                    Animal Care Facility <span class="company"><span class="em"></span> Ferris State University</span>
+                    Animal Care Facility
+                    <span class="company"><span class="em"></span> Ferris State University</span>
                     <span class="employment-date">2007-08</span>
                 </h5>
                 <span class="employment-date"></span>
