@@ -263,3 +263,9 @@ h5 .company {
 .em:before {
     content:"\2014"
 }
+
+.employment-date {
+    float:right;
+    color: #777;
+    font-weight: normal;
+}
